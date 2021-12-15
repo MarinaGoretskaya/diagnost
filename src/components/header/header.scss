@@ -1,0 +1,30 @@
+.header {
+    position: relative;
+    //position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 101;
+}
+.wrapper {
+    display: flex;
+    font-size: 50px;
+}
+h1 {
+    font-family: "Proxima Nova";
+    font-weight: bold;
+    //margin: 0;
+}
+
+.logo {
+    font-family: 'Bebas Neue';
+}
+.test {
+    font-family: 'Gilroy';
+    font-weight: 800;
+}
+.icon {
+    color: green;
+    width: 150px;
+    height: 20px;
+}

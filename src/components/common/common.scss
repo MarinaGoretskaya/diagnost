@@ -1,0 +1,85 @@
+body {
+    font-family: "Proxima Nova", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    position: relative;
+    background-color: #c1c1c1;
+
+}
+h1 {
+
+}
+h2 {
+    font-family: "Gilroy";
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: -0.5px;
+    color: #151515;
+}
+.bg {
+    overflow: hidden;
+    min-width: 300px;
+
+    .outer-bg {
+        max-width: 1920px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+.g-main {
+    position: relative;
+    top: -89px;
+    margin-bottom: -89px;
+}
+
+.b-section--color {
+    color: #fff;
+}
+
+.b-section__bg {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1920px;
+    margin-left: -960px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    //background-size: contain;
+    background-position: center center;
+
+}
+.b-section__bg--color {
+
+}
+
+.b-section__bg--color:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%);
+}
+.b-section__bg--white {
+    background-color: #fff;
+}
+
+
+p.fas {
+    font-family: 'Proxima Nova', serif;
+    font-weight: 800;
+}
+.icon {
+    width: 150px;
+    height: 20px;
+    color: green;
+}

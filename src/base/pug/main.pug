@@ -1,0 +1,47 @@
+include ../../mixins/pug/svg-icon
+
+block variables
+    - var title = "Diagnostics"
+
+doctype html
+html(lang="ru-RU")
+    include head
+
+    body
+        .bg
+            .outer-bg
+
+            //.wrapper__content
+
+            include ../../components/header/header
+
+            main.g-main
+                .container
+                    block sec-1
+                    block sec-2
+                    block sec-3
+                    block sec-4
+                    block sec-5
+                    block sec-6
+                    block sec-7
+                    block sec-8
+                    block sec-9
+
+            include ../../components/footer/footer
+
+            // Include footer
+            //
+
+
+        //.d-none
+        //    include ../../../dist/images/sprite.svg
+        //
+        //a.go-top.go-top--js(href='#')
+        //    +icon('arrow-up')
+
+
+        script(src="static/js/vendors/jquery-3.6.0.min.js")
+        script(src="static/js/vendors/libs.js")
+        script(src="static/js/main.js")
+
+        block script
