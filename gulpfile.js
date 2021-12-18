@@ -40,6 +40,7 @@ function pugToHtml() {
 
 function scssToCss() {
     return gulp.src('src/base/sass/styles.scss')
+    // return gulp.src('src/**/*.scss')
         .pipe(gulpPlumber())
         .pipe(gulpSass())
         .pipe(gulpCleanCss(
@@ -52,14 +53,25 @@ function scssToCss() {
 }
 
 function script() {
-    return gulp.src('src/base/js/main.js')
+    // return gulp.src('src/base/js/main.js')
+    return gulp.src('src/components/**/*.js')
         .pipe(gulpBabel({
             presets: ['@babel/env']
         }))
         .pipe(gulpIf(isBuildFlag, gulpUglify()))
+        .pipe(concat('main.js'))
         .pipe(browserSync.stream())
         .pipe(gulp.dest('dist/static/js/'))
 }
+//
+//
+// gulp.task('scripts', function() {
+//     return gulp.src('./lib/*.js') // путь к папке со скриптами
+//         .pipe(concat('all.js')) // в какой файл объединить
+//         .pipe(gulp.dest('./dist/'));
+// });
+
+
 
 function copyJQuery() {
     return gulp.src('src/base/js/vendors/jquery-3.6.0.min.js')

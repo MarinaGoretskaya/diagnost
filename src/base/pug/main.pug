@@ -11,33 +11,28 @@ html(lang="ru-RU")
         .bg
             .outer-bg
 
-            //.wrapper__content
-
             include ../../components/header/header
 
             main.g-main
                 .container
-                    block sec-1
-                    block sec-2
-                    block sec-3
-                    block sec-4
-                    block sec-5
-                    block sec-6
-                    block sec-7
-                    block sec-8
-                    block sec-9
+                    block section-1
+                    block section-2
+                    block section-3
+                    block section-4
+                    block section-5
+                    block section-6
+                    block section-7
+                    block section-8
+                    block section-9
 
             include ../../components/footer/footer
-
-            // Include footer
-            //
 
 
         //.d-none
         //    include ../../../dist/images/sprite.svg
         //
-        //a.go-top.go-top--js(href='#')
-        //    +icon('arrow-up')
+        a.go-top.go-top--js(href='#')
+            +icon('home')
 
 
         script(src="static/js/vendors/jquery-3.6.0.min.js")

@@ -1,10 +1,33 @@
 header.header
+    .b-section__bg
     .container
-        h1 Название сайта
-        .logo Лого
-        .test Тест
-        +icon('phone')
-        +icon('home')
-        +icon('burger')
+        .header__row.row
+            .header__col.col-8
+                .logo-block
+                    .menu
+                        img(src="static/images/png/burger.png")
+                    .logo
+                        img(src="static/images/png/logo.png" alt="logo")
+            .header__col.col-4
+                .contacts
+                    .contacts__email
+                        .contacts__text Пишите нам на&nbsp;email
+                        .contacts__info
+                            +icon("mail")
+                            a(href="mailto: info@diagnistics.by")
+                                span info@diagnistics.by
+                    .contacts__phone
+                        .contacts__text
+                            +icon("phone")
+                            span Есть вопросы? Звоните!
+                        .contacts__info
+                            a(href="tel: +375294564545") +375 (29) 456-45-45
+
+
+
+
+
+
+
 
 

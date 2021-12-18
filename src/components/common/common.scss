@@ -1,26 +1,52 @@
 body {
     font-family: "Proxima Nova", sans-serif;
     font-style: normal;
-    font-size: 18px;
-    line-height: 28px;
+    @include font_size-line(18px, 28px);
     font-weight: normal;
+    letter-spacing: -0.5px;
     position: relative;
     background-color: #c1c1c1;
-
 }
+.go-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
 h1 {
-
+    font-family: "Gilroy", sans-serif;
+    @include font_size-line(42px, 51px);
 }
+
 h2 {
-    font-family: "Gilroy";
-    font-size: 32px;
-    line-height: 42px;
-    letter-spacing: -0.5px;
+    font-family: "Gilroy", sans-serif;
+    @include font_size-line(32px, 42px);
     color: #151515;
 }
+
+h3 {
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: bold;
+    @include font_size-line(24px, 34px);
+    color: #151515;
+}
+
+.supertitle-section {
+    font-family: "Bebas Neue", sans-serif;
+    @include font_size-line(20px, 16px);
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
 .bg {
     overflow: hidden;
     min-width: 300px;
+    position: relative;
 
     .outer-bg {
         max-width: 1920px;
@@ -35,51 +61,21 @@ h2 {
     margin-bottom: -89px;
 }
 
-.b-section--color {
-    color: #fff;
+.capitalize {
+    text-transform: uppercase;
 }
 
-.b-section__bg {
-    position: absolute;
-    z-index: -1;
-    display: block;
-    overflow: hidden;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 1920px;
-    margin-left: -960px;
-    background-repeat: no-repeat;
-    background-color: transparent;
-    //background-size: contain;
-    background-position: center center;
+@media (max-width: 992px) {
+    h1 {
+        @include font_size-line(37px, 47px);
+    }
 
-}
-.b-section__bg--color {
+    h2 {
+        @include font_size-line(28px, 38px);
+    }
 
-}
+    h3 {
+        @include font_size-line(20px, 30px);
+    }
 
-.b-section__bg--color:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background-image: linear-gradient(180deg, rgba(0, 78, 134, 0.8) 0%, rgba(10, 65, 104, 0.8) 100%);
-}
-.b-section__bg--white {
-    background-color: #fff;
-}
-
-
-p.fas {
-    font-family: 'Proxima Nova', serif;
-    font-weight: 800;
-}
-.icon {
-    width: 150px;
-    height: 20px;
-    color: green;
 }

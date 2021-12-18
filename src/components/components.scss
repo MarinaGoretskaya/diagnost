@@ -1,16 +1,20 @@
 @import "common/common";
 @import "common/container";
-@import "common/sec";
+@import "common/icon";
+@import "common/button";
+@import "common/list";
+@import "common/b-section";
+@import "common/section";
 
 @import "header/header";
-@import "sections/sec-1/sec-1";
-@import "sections/sec-2/sec-2";
-@import "sections/sec-3/sec-3";
-@import "sections/sec-4/sec-4";
-@import "sections/sec-5/sec-5";
-@import "sections/sec-6/sec-6";
-@import "sections/sec-7/sec-7";
-@import "sections/sec-8/sec-8";
-@import "sections/sec-9/sec-9";
+@import "sections/section-1/section-1";
+@import "sections/section-2/section-2";
+@import "sections/section-3/section-3";
+@import "sections/section-4/section-4";
+@import "sections/section-5/section-5";
+@import "sections/section-6/section-6";
+@import "sections/section-7/section-7";
+@import "sections/section-8/section-8";
+@import "sections/section-9/section-9";
 
 @import "footer/footer";

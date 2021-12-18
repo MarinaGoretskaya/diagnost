@@ -1,0 +1,35 @@
+.section-5 {
+    padding-top: 130px;
+    padding-bottom: 70px;
+
+    .b-section__bg {
+        background-image: url("../images/jpg/sec-5.jpg");
+    }
+
+    &__col {
+        &:last-child {
+            justify-content: flex-end;
+        }
+
+        .item-right {
+            max-width: 340px;
+
+            .button {
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section-5 {
+        .item-sec5 {
+            margin-bottom: 20px;
+        }
+
+        &__col:last-child {
+            justify-content: flex-start;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.price {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .b-section__bg--gray:after {
+        background-image: url("../images/png/price-iron.png");
+    }
+
+    &__title {
+        font-family: "Bebas Neue", sans-serif;
+        @include font_size-line(42px, 42px);
+        letter-spacing: 5px;
+        background: linear-gradient(180deg, #2F80ED 0%, rgba(0, 78, 134, 0.8) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__footer {
+        display: flex;
+    }
+
+    &__video {
+        display: flex;
+        align-items: center;
+        margin-right: 75px;
+    }
+
+    &__caption {
+        color: #151515;
+        opacity: 0.7;
+        font-weight: 600;
+    }
+
+    .video {
+        &__icon {
+            @include size(50px, 50px);
+            border-radius: 25px;
+            background: #FEE040;
+            box-shadow: 0px 15px 40px rgba(254, 224, 64, 0.2);
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin-right: 20px;
+        }
+
+        &__title {
+            font-family: "Bebas Neue",sans-serif;
+            @include font_size-line(20px, 16px);
+            text-transform: uppercase;
+            letter-spacing: 7px;
+            color: #BBBBBB;
+        }
+    }
+}
+
+//.b-section__bg--gray:before {
+//
+//}
