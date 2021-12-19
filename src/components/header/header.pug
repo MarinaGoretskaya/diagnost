@@ -1,22 +1,22 @@
 header.header
     .b-section__bg
     .container
-        .header__row.row
-            .header__col.col-8
+        .header__row.flex
+            .header__col
                 .logo-block
                     .menu
                         img(src="static/images/png/burger.png")
                     .logo
                         img(src="static/images/png/logo.png" alt="logo")
-            .header__col.col-4
-                .contacts
-                    .contacts__email
+            .header__col
+                .contacts.header-contacts
+                    .contacts-item.contacts__email
                         .contacts__text Пишите нам на&nbsp;email
                         .contacts__info
                             +icon("mail")
                             a(href="mailto: info@diagnistics.by")
                                 span info@diagnistics.by
-                    .contacts__phone
+                    .contacts-item.contacts__phone
                         .contacts__text
                             +icon("phone")
                             span Есть вопросы? Звоните!

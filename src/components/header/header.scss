@@ -8,7 +8,7 @@
 
     &__row {
         justify-content: space-between;
-        align-items: flex-end;
+        align-items: center;
         padding-top: 19px;
         padding-bottom: 18px;
     }
@@ -22,58 +22,54 @@
     }
 }
 
-
-.contacts {
-    display: flex;
+.header-contacts {
     justify-content: space-between;
     align-items: flex-end;
-    white-space: nowrap;
 
-    &__email {
-        .icon, a {
-            color: #FEE040;
+    .contacts {
+        &-item {
+            margin-bottom: 0;
         }
 
-        .icon {
-            @include size(10px, 7.5px);
-            margin-right: 9.5px;
+        &__email {
+            .icon, a {
+                color: #FEE040;
+            }
+
+            .icon {
+                @include size(10px, 7.5px);
+                top: 1px;
+            }
+
+            .contacts__info a {
+                @include font_size-line(14px, 12px);
+                font-weight: normal;
+            }
         }
 
-        .contacts__info {
-            @include font_size-line(14px, 12px);
+        &__phone {
+
+            .icon {
+                @include size(11px, 11px);
+                color: #fff;
+            }
+
+            .contacts__info {
+                @include font_size-line(20px, 24px);
+                font-weight: bold;
+            }
+
+            a {
+                color: #fff;
+            }
         }
-    }
 
-    &__phone {
-        margin-left: 10px;
-
-        .icon {
-            @include size(11px, 11px);
+        &__phone {
+            text-align: right;
         }
-
-        .contacts__info {
-            @include font_size-line(20px, 24px);
-            font-weight: bold;
-        }
-
-        a {
-            color: #fff;
-        }
-    }
-
-    &__phone {
-        text-align: right;
-    }
-
-    &__text {
-        opacity: .5;
-        @include font_size-line(12px, 12px);
-    }
-
-    &__info {
-        margin-top: 7px;
     }
 }
+
 
 .header-scroll {
     animation-name: show_header;

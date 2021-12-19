@@ -3,7 +3,7 @@ $('.services__slider').slick({
     initialSlide: 0,
     dots: false,
     arrows: false,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
         {

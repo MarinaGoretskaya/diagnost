@@ -2,46 +2,56 @@ block section-8
     section.b-section.section-8.reviews
         .b-section__bg.b-section__bg--white
         .reviews__body
-            .reviews__header.center
+            .reviews__header.center.flex
                 .reviews__supertitle.supertitle-section Отзывы
-                h2.reviews__title Каждый второй клиент приходит к нам по рекомендации
+                h2.reviews__title Каждый второй клиент приходит к&nbsp;нам по&nbsp;рекомендации
                 .reviews__descr.
-                    За 2018 год мы обследовали более 100 антенн, 800 труб и 500 зданий.
-                     Мы работали для БОТ, Бэст, Huawei, МТС, фабрики “Алеся” и многих других требовательных клиентов.
-                     И вот, что они пишут о нас:
+                    За 2018 год мы обследовали более 100&nbsp;антенн, 800&nbsp;труб и&nbsp;500&nbsp;зданий. Мы&nbsp;работали для БОТ, Бэст, Huawei, МТС, фабрики «Алеся» и&nbsp;многих других требовательных клиентов. И&nbsp;вот, что они пишут о&nbsp;нас:
 
-            .reviews__slider
-                .slider-item
-                    .item-review
-                        .item-review__img
-                            img(src="static/images/png/feetback-1.png" alt="Отзыв Huawei")
-                        .item-review__logo
-                            img(src="static/images/png/Huawei.png" alt="Лого Huawei")
-                        .item-review__caption ООО «Хуавей Беларусь»
-                .slider-item
-                    .item-review
-                        .item-review__img
-                            img(src="static/images/png/feetback-2.png" alt="Отзыв Life")
-                        .item-review__logo
-                            img(src="static/images/png/life.png" alt="Лого Life")
-                        .item-review__caption ЗАО «БеСТ»
-                .slider-item
-                    .item-review
-                        .item-review__img
-                            img(src="static/images/png/feetback-3.png" alt="Отзыв Алеся")
-                        .item-review__logo
-                            img(src="static/images/png/alesia.png" alt="Лого Алеся")
-                        .item-review__caption ОАО «Алеся»
-                .slider-item
-                    .item-review
-                        .item-review__img
-                            img(src="static/images/png/feetback-4.png" alt="Отзыв МТС")
-                        .item-review__logo
-                            img(src="static/images/png/mts.png" alt="Лого МТС")
-                        .item-review__caption СООО «Мобильные ТелеСистемы»
+            .reviews__row.flex
+                .reviews-item
+                    .reviews-item__inner
+                        .reviews-item__img-wrap
+                            .reviews-item__img
+                                img(src="static/images/png/feetback-1.png" alt="Отзыв Huawei")
+                                .reviews-item__img-hover
+                            .reviews-item__logo
+                                img(src="static/images/png/Huawei.png" alt="Лого Huawei")
+                        .reviews-item__text-wrap
+                            .reviews-item__caption ООО «Хуавей Беларусь»
+                .reviews-item
+                    .reviews-item__inner
+                        .reviews-item__img-wrap
+                            .reviews-item__img
+                                img(src="static/images/png/feetback-2.png" alt="Отзыв Life")
+                                .reviews-item__img-hover
+                            .reviews-item__logo
+                                img(src="static/images/png/life.png" alt="Лого Life")
+                        .reviews-item__text-wrap
+                            .reviews-item__caption ЗАО «БеСТ»
+                .reviews-item
+                    .reviews-item__inner
+                        .reviews-item__img-wrap
+                            .reviews-item__img
+                                img(src="static/images/png/feetback-3.png" alt="Отзыв Алеся")
+                                .reviews-item__img-hover
+                            .reviews-item__logo
+                                img(src="static/images/png/alesia.png" alt="Лого Алеся")
+                        .reviews-item__text-wrap
+                            .reviews-item__caption ОАО «Алеся»
+                .reviews-item
+                    .reviews-item__inner
+                        .reviews-item__img-wrap
+                            .reviews-item__img
+                                img(src="static/images/png/feetback-4.png" alt="Отзыв МТС")
+                                .reviews-item__img-hover
+                            .reviews-item__logo
+                                img(src="static/images/png/mts.png" alt="Лого МТС")
+                        .reviews-item__text-wrap
+                            .reviews-item__caption СООО «Мобильные ТелеСистемы»
 
-            .button-block.center
+            .button-block.flex
                 button.button
                     +icon('view')
-                    span.button__text смотреть все благодарности (549 шт.)
+                    span.button__text смотреть все благодарности (549&nbsp;шт.)
 

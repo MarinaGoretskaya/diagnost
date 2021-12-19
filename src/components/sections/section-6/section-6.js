@@ -3,7 +3,9 @@ $('.team__slider').slick({
     initialSlide: 0,
     dots: false,
     arrows: true,
-    slidesToShow: 2,
+    prevArrow: '<div id="prev" class="arrow arrow-prev"></div>',
+    nextArrow: '<div id="next" class="arrow arrow-next"></div>',
+    slidesToShow: 5,
     slidesToScroll: 1,
     responsive: [
         {
