@@ -48,7 +48,6 @@
         }
 
         &__phone {
-
             .icon {
                 @include size(11px, 11px);
                 color: #fff;
@@ -95,5 +94,23 @@
     100% {
         opacity: 1;
         top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .contacts-item.contacts__email {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-block .menu {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 510px) {
+    .header .contacts-item.contacts__phone {
+        display: none;
     }
 }

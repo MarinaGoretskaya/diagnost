@@ -1,16 +1,17 @@
 .section-6 {
     padding-top: 100px;
     padding-bottom: 100px;
-
 }
 
 .team__supertitle {
     color: #2F80ED;
     align-items: center;
     transform: rotate(-90deg);
-    //position: relative;
-    //bottom: 0;
-    //left: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-left: -162px;
+    margin-bottom: 263px;
 
     .supertitle-section__gradient-line {
         position: static;
@@ -32,7 +33,6 @@
 
         img {
             width: 100%;
-
         }
     }
     .arrow {
@@ -44,7 +44,6 @@
         position: absolute;
         z-index: 1;
         cursor: pointer;
-
 
         &:before {
             content: '';
@@ -80,6 +79,23 @@
 @media (max-width: 992px) {
     .team__col:first-child {
         display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-6 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .slider {
+        .arrow-prev {
+            left: 0;
+        }
+
+        .arrow-next {
+            right: 0;
+        }
     }
 
 }

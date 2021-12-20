@@ -13,13 +13,13 @@
 
         .item-right {
             max-width: 340px;
-
-            .button {
-                width: 100%;
-                margin-bottom: 40px;
-            }
         }
     }
+}
+
+.button-block .button {
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 @media (max-width: 992px) {
@@ -30,6 +30,21 @@
 
         &__col:last-child {
             justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .section-5 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__row {
+            flex-direction: column;
+        }
+
+        .button-block .button {
+            margin-bottom: 20px;
         }
     }
 }

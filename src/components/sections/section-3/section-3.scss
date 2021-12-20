@@ -53,7 +53,9 @@
                 letter-spacing: 7px;
                 color: #FEE040;
                 text-decoration: none;
+                white-space: nowrap;
             }
+
             .icon {
                 width: 21px;
             }
@@ -67,4 +69,19 @@
     left: 0;
     overflow: hidden;
     margin-left: -262px;
+}
+
+@media (max-width: 1220px) {
+    .services__slider {
+        .slider-item {
+            padding: 0 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .services {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }

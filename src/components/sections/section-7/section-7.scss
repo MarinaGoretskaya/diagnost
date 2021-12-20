@@ -34,6 +34,10 @@
         margin-right: 75px;
     }
 
+    &__video:hover {
+        opacity: .8;
+    }
+
     &__caption {
         color: #151515;
         opacity: 0.7;
@@ -54,6 +58,10 @@
 
             .icon {
                 margin-right: 0;
+                bottom: 0;
+            }
+            .icon:hover {
+                color: #000;
             }
         }
 
@@ -63,6 +71,28 @@
             text-transform: uppercase;
             letter-spacing: 7px;
             color: #BBBBBB;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .price {
+        .b-section__bg--gray:after {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .price {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &__footer {
+            flex-wrap: wrap;
+        }
+        .price__video {
+            margin-bottom: 20px;
         }
     }
 }
