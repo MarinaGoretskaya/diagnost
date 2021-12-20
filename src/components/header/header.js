@@ -6,4 +6,4 @@ window.onscroll = function showHeader() {
     } else {
         headerBg.classList.remove('header-scroll');
     }
-}
+};

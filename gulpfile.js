@@ -53,7 +53,6 @@ function scssToCss() {
 }
 
 function script() {
-    // return gulp.src('src/base/js/main.js')
     return gulp.src('src/components/**/*.js')
         .pipe(gulpBabel({
             presets: ['@babel/env']
@@ -63,15 +62,6 @@ function script() {
         .pipe(browserSync.stream())
         .pipe(gulp.dest('dist/static/js/'))
 }
-//
-//
-// gulp.task('scripts', function() {
-//     return gulp.src('./lib/*.js') // путь к папке со скриптами
-//         .pipe(concat('all.js')) // в какой файл объединить
-//         .pipe(gulp.dest('./dist/'));
-// });
-
-
 
 function copyJQuery() {
     return gulp.src('src/base/js/vendors/jquery-3.6.0.min.js')
@@ -79,7 +69,10 @@ function copyJQuery() {
 }
 
 function vendors() {
-    return gulp.src(['node_modules/slick-carousel/slick/slick.min.js'])
+    return gulp.src([
+        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js'
+    ])
         .pipe(concat('libs.js'))
         .pipe(gulp.dest('dist/static/js/vendors/'))
 }

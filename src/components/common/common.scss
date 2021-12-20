@@ -10,7 +10,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: inherit;
+
+    &:hover {
+        opacity: 0.7;
+        color: inherit;
+    }
 }
 
 .go-top {

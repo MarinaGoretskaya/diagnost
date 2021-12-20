@@ -146,7 +146,6 @@
         &__inner {
             background: #F5F5F5;
             max-width: 340px;
-
             overflow: visible;
             margin-top: 50px;
             height: 100%;
@@ -206,6 +205,12 @@
         &-step3 {
             .b-section__bg--gray:after {
                 display: none;
+            }
+        }
+
+        &-step1 {
+            .steps__col:nth-child(2) {
+                padding-left: 10px;
             }
         }
 

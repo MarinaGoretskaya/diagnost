@@ -4,8 +4,19 @@ header.header
         .header__row.flex
             .header__col
                 .logo-block
-                    .menu
+                    a.menu-botton(href="index.html")
                         img(src="static/images/png/burger.png")
+                    .menu(style="display: none;")
+                        ul#accordeon.menu__inner
+                            li.menu__item
+                                a.menu__link(href="index.html") Бизнес
+                            li.menu__item
+                                a.menu__link(href="#") О нас
+                            li.menu__item
+                                a.menu__link(href="#") Цены
+                            li.menu__item
+                                a.menu__link(href="#") Оформить заказ
+
                     a.logo(href="index.html")
                         img(src="static/images/png/logo.png" alt="logo")
             .header__col

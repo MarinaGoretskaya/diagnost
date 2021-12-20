@@ -16,11 +16,47 @@
 
 .logo-block {
     display: flex;
+    position: relative;
+}
 
-    .menu {
+.menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    text-align: left;
+    width: 240px;
+    z-index: 10;
+
+    &-botton {
         margin-right: 80px;
     }
+
+    &__inner {
+        width: 100%;
+        max-width: 360px;
+        background: transparent;
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__inner .menu__link {
+        cursor: pointer;
+        display: block;
+        padding: 15px 20px 15px 15px;
+        background-color: rgba(0, 78, 134, 1);
+        color: #fff;
+        @include font_size-line(15px, 17px);
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
 }
+
+
 
 .header-contacts {
     justify-content: space-between;
@@ -104,8 +140,15 @@
 }
 
 @media (max-width: 576px) {
-    .logo-block .menu {
-        margin-right: 40px;
+    .logo-block {
+        .menu-botton {
+            margin-right: 40px;
+        }
+
+        .menu {
+            left: -10px;
+            top: 49px;
+        }
     }
 }
 
